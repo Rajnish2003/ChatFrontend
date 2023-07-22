@@ -1,0 +1,22 @@
+.chats{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: #131324;
+}
+.chatContainer{
+    background-color: #3a503f76;
+    height: 85vh;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+@media screen and (min-width:720px)  and (max-width:1080px){
+   .chatContainer{
+    grid-template-columns: 35% 65%;
+   }
+}

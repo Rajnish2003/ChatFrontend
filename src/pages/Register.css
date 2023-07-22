@@ -1,0 +1,147 @@
+
+.hero{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(135deg, #000, #434343);
+    
+}
+.register {
+    width: 100%;
+    height: 100%;
+  
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    padding-top: 1rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.center {
+  color: white;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgba(242, 242, 242, 0.06);
+    backdrop-filter: blur(5px);
+    border-right: .5px solid #fff;
+    border-bottom: .5px solid #fff;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(6, 90, 6);
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #140303;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(214, 214, 214);
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #a9a9a9;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    color:#fff;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #ffffff;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #ffffff;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+
+.upload {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.btn-reg{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.upload p {
+    color: red;
+    text-align: left;
+    padding: 0 2.2rem;
+    font-size: 0.8rem;
+}
+
+.btn-reg:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.btn-switch{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.btn-switch a{
+    color: rgb(102, 165, 249);
+}
